@@ -17,13 +17,14 @@ A new Flutter plugin.
   s.resources = 'Storyboards/**/*.storyboard'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
+  s.resource_bundles = {'flutter_inappwebview_ios_privacy' => ['Resources/PrivacyInfo.xcprivacy']}
 
   # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
   s.swift_version = '5.0'
 
   s.platforms = { :ios => '11.0' }
-  s.dependency 'OrderedSet', '~>5.0'
+  s.dependency 'OrderedSet', :git => 'https://github.com/ostk0069/OrderedSet', :commit => 'af9af501536680f2c787639fbd2710916e2d697b'
 
   s.default_subspec = 'Core'
 
