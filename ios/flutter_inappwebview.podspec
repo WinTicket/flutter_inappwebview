@@ -24,7 +24,7 @@ A new Flutter plugin.
   s.swift_version = '5.0'
 
   s.platforms = { :ios => '11.0' }
-  s.dependency = { 'OrderedSet', :git => 'https://github.com/ostk0069/OrderedSet', :commit => 'af9af501536680f2c787639fbd2710916e2d697b' }
+  s.dependency 'OrderedSet', '6.0.2'
 
   s.default_subspec = 'Core'
 
